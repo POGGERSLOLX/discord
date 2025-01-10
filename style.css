@@ -1,17 +1,28 @@
-body {
-    background-color: black;
-    color: blue;
-    font-family: Arial, sans-serif;
+/* Resetting some basic styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; /* Black background */
+    color: blue; /* Blue text */
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin: 0;
 }
 
 .content p {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 6rem; /* Big text */
+    font-weight: bold; /* Bold text */
+    color: #1E90FF; /* Bright blue color */
+    text-transform: uppercase; /* Make the text uppercase */
+    text-shadow: 2px 2px 10px rgba(0, 0, 255, 0.6); /* Cool glowing effect */
+    text-align: center;
+    line-height: 1.2;
     margin: 0;
 }
