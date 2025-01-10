@@ -1,4 +1,4 @@
-/* Resetting some basic styles */
+/* Global reset and font settings */
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +6,32 @@
 }
 
 body {
-    background-color: black; /* Black background */
-    color: blue; /* Blue text */
-    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark grey-black background for a sleeker look */
+    font-family: 'Roboto', sans-serif; /* Modern font */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    color: white;
 }
 
 .content p {
-    font-size: 6rem; /* Big text */
-    font-weight: bold; /* Bold text */
-    color: #1E90FF; /* Bright blue color */
-    text-transform: uppercase; /* Make the text uppercase */
-    text-shadow: 2px 2px 10px rgba(0, 0, 255, 0.6); /* Cool glowing effect */
+    font-size: 7rem; /* Very large text size */
+    font-weight: bold; /* Make text bold */
+    color: #00bfff; /* Bright Sky Blue color */
+    text-transform: uppercase; /* Uppercase text for impact */
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8), 0 0 30px rgba(0, 191, 255, 0.6); /* Glowing text effect */
+    letter-spacing: 5px; /* Add spacing between the letters */
     text-align: center;
-    line-height: 1.2;
-    margin: 0;
+    animation: glow-animation 1.5s infinite alternate; /* Animation effect for the glow */
+}
+
+/* Text glow animation */
+@keyframes glow-animation {
+    0% {
+        text-shadow: 0 0 15px rgba(0, 191, 255, 0.8), 0 0 30px rgba(0, 191, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 30px rgba(0, 191, 255, 1), 0 0 60px rgba(0, 191, 255, 0.8);
+    }
 }
